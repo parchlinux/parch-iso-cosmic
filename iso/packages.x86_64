@@ -137,8 +137,11 @@ gvfs
 gvfs-mtp
 networkmanager
 android-file-transfer
+boost
+sddm
 
 #Desktop
+cosmic-epoch-git
 
 #systemutils
 btop
@@ -147,6 +150,9 @@ packagekit-qt5
 neofetch-git
 
 #ParchLinux Core Packages
+parch-welcome
+calamares-parch
+calamares
 os-prober
 paru
 parch-emoji-ios
