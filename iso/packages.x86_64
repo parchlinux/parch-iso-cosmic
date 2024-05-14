@@ -146,8 +146,8 @@ cosmic-epoch-git
 #systemutils
 btop
 xdg-user-dirs
-packagekit-qt5
 neofetch-git
+fastfetch
 
 #ParchLinux Core Packages
 parch-welcome
