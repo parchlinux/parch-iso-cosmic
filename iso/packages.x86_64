@@ -141,7 +141,7 @@ boost
 sddm
 
 #Desktop
-cosmic-epoch-git
+cosmic-session-git
 
 #systemutils
 btop
@@ -151,8 +151,8 @@ fastfetch
 
 #ParchLinux Core Packages
 parch-welcome
-calamares-parch
-calamares
+calamares-parch-beta
+calamares-git
 os-prober
 paru
 parch-emoji-ios
