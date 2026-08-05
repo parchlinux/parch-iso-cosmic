@@ -34,7 +34,6 @@ main() {
             echo -e "$Blue### Install complete ###$reset"
             echo -e "$Green### Start build $reponame with archiso ###$reset"
             build
-            makezip
         fi
     else
         echo -e "$Red###OS can't supported###$reset"
@@ -44,17 +43,14 @@ main() {
 }
 install() {
     set -e
-    pacman -Sy; pacman --noconfirm -S --needed git archiso github-cli p7zip
+    pacman -Sy; pacman --noconfirm -S --needed git archiso github-cli
 }
 build() {
     set -e
+    rm -rf \
+        out/ \
+        work/
     mkarchiso -v iso/
 }
-makezip() {
-    cd out
-    7z -v500m a "$(ls *.iso)".zip "$(ls *.iso)"
-    md5sum * > md5sums.txt
-}
-
 
 main

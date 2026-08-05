@@ -1,0 +1,14 @@
+# remove from airootfs!
+# Override calamares-parch's launch.sh with our Cosmic-compatible version
+
+[Trigger]
+Operation = Install
+Type = Package
+Target = calamares-parch
+
+[Action]
+Description = Overriding launch.sh with Cosmic-compatible version...
+When = PostTransaction
+Depends = sh
+Depends = coreutils
+Exec = /bin/sh -c 'cp /root/launch.sh /etc/calamares/launch.sh && chmod 755 /etc/calamares/launch.sh'
